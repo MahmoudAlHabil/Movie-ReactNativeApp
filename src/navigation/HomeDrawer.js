@@ -5,37 +5,25 @@ import HomeTab from './HomeTab';
 import PrivacyPolicyScreen from '../screens/PrivacyPolicyScreen';
 import ContactUsScreen from '../screens/ContactUsScreen';
 import { primary } from '../utils/colors';
+import auth from '@react-native-firebase/auth';
 
-function HomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button
-        onPress={() => navigation.navigate('Notifications')}
-        title="Go to notifications"
-      />
-    </View>
-  );
-}
-
-function NotificationsScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
-    </View>
-  );
+function SignOut({ navigation }) {
+  auth()
+    .signOut()
+    .then(() => console.log('User signed out!'));
+  return null;
 }
 
 const Drawer = createDrawerNavigator();
 
 const HomeDrawer = () => {
   return (
-      <Drawer.Navigator
-      screenOptions={{headerTitleStyle: {color: primary}, 
-      drawerLabelStyle: {}}}>
-        <Drawer.Screen name="HomeTab" component={HomeTab} />
-        <Drawer.Screen name="Privacy Policy" component={PrivacyPolicyScreen} />
-        <Drawer.Screen name="Contact Us" component={ContactUsScreen} />
-      </Drawer.Navigator>
+    <Drawer.Navigator>
+      <Drawer.Screen name="HomeTab" component={HomeTab} />
+      <Drawer.Screen name="Privacy Policy" component={PrivacyPolicyScreen} />
+      <Drawer.Screen name="Contact Us" component={ContactUsScreen} />
+      <Drawer.Screen name="Sign out" component={SignOut} />
+    </Drawer.Navigator>
   );
 }
 

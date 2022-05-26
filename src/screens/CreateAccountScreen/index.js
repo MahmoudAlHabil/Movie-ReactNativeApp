@@ -57,7 +57,7 @@ const CreateAccountScreen = (props) => {
                         renderIconRight={() => visibleIcon} />
                     <Button
                         onPress={() => createUser(navigation, email, password)}
-                        title='Sing Up'
+                        title='Sign Up'
                         wrapperStyle={styles.SignupButton} />
                     <TouchableOpacity
                         onPress={() => navigation.navigate('LoginScreen')}
