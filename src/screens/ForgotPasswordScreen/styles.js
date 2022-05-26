@@ -41,12 +41,6 @@ const styles = ScaledSheet.create({
         marginBottom: '8%',
         color: '#6D6D6D',
     },
-    orText: {
-        fontSize: 12,
-        lineHeight: 16,
-        color: '#6D6D6D',
-        opacity: 0.5,
-    },
     input: {
         width: '72%',
         marginVertical: '1%'

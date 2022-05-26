@@ -16,7 +16,6 @@ const ForgotPasswordScreen = (props) => {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View style={styles.header}>
-                    <Text style={styles.headerText}>Forgot Password</Text>
                     <TouchableOpacity
                         onPress={() => navigation.goBack()}
                         style={styles.wrapperBackIcon}>
@@ -53,14 +52,6 @@ const forgotPassword = (navigation, email) => {
             navigation.navigate('VerificationScreen');
         })
         .catch(error => {
-            if (error.code === 'auth/email-already-in-use') {
-                alert('That email address is already in use!');
-            }
-
-            if (error.code === 'auth/invalid-email') {
-                alert('That email address is invalid!');
-            }
-
             alert(error);
         });
 };
