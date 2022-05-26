@@ -21,20 +21,20 @@ const LoginScreen = (props) => {
     style={styles.visibleIcon}
     onPress={visibleHandler}>
     {isVisible ?
-      <SvgXml xml={icons.visible} /> :
-      <SvgXml xml={icons.invisible} />}
+      <Icon name='ios-eye' size={16} color={'#c6c6c6'} /> :
+      <Icon name='ios-eye-off' size={16} color={'#c6c6c6'} />}
   </TouchableOpacity>)
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.header}>
-          <Text style={styles.headerText}>Welcome back</Text>
           <TouchableOpacity
             onPress={() => navigation.navigate('WelcomeScreen')}
             style={styles.wrapperBackIcon}>
             <Icon name='arrow-back' size={32} color='black' style={{ fontWeight: 'bold' }} />
           </TouchableOpacity>
+          <Text style={styles.headerText}>Welcome back</Text>
         </View>
         <View style={styles.WrapperImage}>
           <SvgXml xml={icons.loginImg} width="220" height="220" />
@@ -42,17 +42,17 @@ const LoginScreen = (props) => {
         <View style={styles.WrapperForm}>
           <Input
             wrapperStyle={styles.input}
-            placeholder='Username or email'
+            placeholder='Email'
             onChangeText={val => setEmail(val)}
             keyboardType='email-address'
-            renderIconRight={() => <Icon name='person-sharp' color={'#c6c6c6'} />} />
+            renderIconLeft={() => <Icon name='mail' size={16} color={'#c6c6c6'} />} />
           <Input
             wrapperStyle={styles.input}
             placeholder='Password'
             secureTextEntry={!isVisible}
             onChangeText={val => setPassword(val)}
-            renderIconRight={() => <SvgXml xml={icons.lock} />}
-            renderIconLeft={() => visibleIcon} />
+            renderIconLeft={() => <Icon name='lock-closed' size={16} color={'#c6c6c6'} />}
+            renderIconRight={() => visibleIcon} />
           <TouchableOpacity
             onPress={() => navigation.navigate('ForgotPasswordScreen')}
             style={styles.forgotPasswordTouch}>

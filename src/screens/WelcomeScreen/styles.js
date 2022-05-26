@@ -44,22 +44,15 @@ const styles = ScaledSheet.create({
     },
     logInSignUpWrapper: {
       width: '100%',
-      flexDirection: 'row',
+      height: 120,
       justifyContent: 'space-between',
       marginVertical: '5%',
-      paddingHorizontal: '7%'
+      alignItems: 'center'
     },
-    signFacebook: {
+    button: {
       width: '87%',
       marginTop: '2%'
     },
-    facebookText: {
-      fontSize: 11,
-      fontWeight: 'bold',
-      lineHeight: 12,
-      marginHorizontal: 20,
-      paddingTop: '1%'
-    }
   })
   
 export default styles;

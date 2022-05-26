@@ -12,7 +12,7 @@ const styles = ScaledSheet.create({
         shadowOffset: { width: 0, height: 3 }, // change this for more shadow
         shadowOpacity: 0.15,
         shadowRadius: 6,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
     },
     wrapper: {
         flexDirection: 'row',

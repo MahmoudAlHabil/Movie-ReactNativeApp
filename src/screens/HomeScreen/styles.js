@@ -1,9 +1,16 @@
 import {ScaledSheet} from 'react-native-size-matters';
 
 const styles = ScaledSheet.create({
+    outerContainer: {
+        
+    },
     container: {
         flex: 1,
+        paddingTop: 
+        0,
         backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     sectionTitle: {
         fontSize: 24,
@@ -11,8 +18,8 @@ const styles = ScaledSheet.create({
         color: 'white',
     },
     card: {
-        height: '160@s',
-        width: '146@s',
+        height: '170@s',
+        width: '155@s',
         backgroundColor: '#f18484',
         justifyContent: 'center',
         alignItems: 'center',

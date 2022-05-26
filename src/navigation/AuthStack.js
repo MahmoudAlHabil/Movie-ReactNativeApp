@@ -4,8 +4,6 @@ import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import CreateAccountScreen from '../screens/CreateAccountScreen';
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
-import VerificationScreen from '../screens/VerificationScreen';
-import ChangePasswordScreen from '../screens/ChangePasswordScreen';
 import HomeTab from './HomeTab';
 import HomeDrawer from './HomeDrawer';
 
@@ -29,14 +27,6 @@ const AuthStack = (props) => {
       <Stack.Screen
         name="ForgotPasswordScreen"
         component={ForgotPasswordScreen}
-      />
-      <Stack.Screen
-        name="VerificationScreen"
-        component={VerificationScreen}
-      />
-      <Stack.Screen
-        name="ChangePasswordScreen"
-        component={ChangePasswordScreen}
       />
       <Stack.Screen
         name="HomeDrawer"

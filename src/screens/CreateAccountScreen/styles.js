@@ -17,10 +17,10 @@ const styles = ScaledSheet.create({
         lineHeight: 35,
         flex: 1,
         textAlign: 'center',
-        marginLeft: '11%',
+        marginRight: '11%',
     },
     wrapperBackIcon: {
-        marginRight: '5%',
+        marginLeft: '5%',
         width: 24,
         justifyContent: 'center',
         alignItems: 'center',
@@ -38,11 +38,11 @@ const styles = ScaledSheet.create({
         marginVertical: '2.5%'
     },
     visibleIcon: {
-        padding: 8,
+        padding: 4,
     },
     haveAccountTouch: {
-        alignSelf: 'flex-start',
-        marginLeft: '14%'
+        alignSelf: 'flex-end',
+        marginRight: '15%'
     },
     haveAccountText: {
         fontSize: 12,

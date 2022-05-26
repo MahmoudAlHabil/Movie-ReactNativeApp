@@ -17,17 +17,17 @@ const styles = ScaledSheet.create({
       lineHeight: 35,
       flex: 1,
       textAlign: 'center',
-      marginLeft: '11%',
+      marginRight: '11%',
     },
     wrapperBackIcon: {
-      marginRight: '5%',
+      marginLeft: '5%',
       width: 24,
       justifyContent: 'center',
       alignItems: 'center',
     },
     WrapperImage: {
       alignItems: 'center',
-      marginBottom: '18%'
+      marginBottom: '22%'
     },
     WrapperForm: {
       flex: 1,
@@ -38,12 +38,12 @@ const styles = ScaledSheet.create({
       marginVertical: '2.5%',
     },
     visibleIcon: {
-      padding: 8,
+      padding: 4,
     },
     forgotPasswordTouch: {
-      alignSelf: 'flex-start',
+      alignSelf: 'flex-end',
       marginBottom: '11%',
-      marginLeft: '14%'
+      marginRight: '15%'
     },
     forgotPasswordText: {
       fontSize: 12,

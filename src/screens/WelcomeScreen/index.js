@@ -21,16 +21,15 @@ const WelcomeScreen = (props) => {
         <Text style={styles.bodyText}>Enjoy your time</Text>
         <View style={styles.logInSignUpWrapper}>
           <Button title='Log In'
+            wrapperStyle={styles.button}
             onPress={() => navigation.navigate('LoginScreen')} />
           <Button title='Sign Up'
+            wrapperStyle={styles.button}
             onPress={() => navigation.navigate('CreateAccountScreen')} />
+          <Button title='Sign fast'
+            wrapperStyle={styles.button}
+            onPress={() => navigation.navigate('HomeDrawer')} />
         </View>
-        <Button
-          title='LOGIN WITH FACEBOOK'
-          onPress={() => navigation.navigate('HomeDrawer')}
-          icon={() => <Icon name='facebook' size={16} color='white'/>}
-          textStyle={styles.facebookText}
-          wrapperStyle={styles.signFacebook} />
       </View>
     </SafeAreaView>
   )

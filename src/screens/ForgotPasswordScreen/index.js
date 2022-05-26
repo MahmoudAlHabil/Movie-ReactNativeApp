@@ -4,6 +4,7 @@ import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { SvgXml } from 'react-native-svg';
 import { icons } from '../../utils/icons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
 import auth from '@react-native-firebase/auth';
 
@@ -19,8 +20,9 @@ const ForgotPasswordScreen = (props) => {
                     <TouchableOpacity
                         onPress={() => navigation.goBack()}
                         style={styles.wrapperBackIcon}>
-                        <SvgXml xml={icons.back} width="17" height="15" />
+                        <Icon name='arrow-back' size={32} color='black' style={{ fontWeight: 'bold' }} />
                     </TouchableOpacity>
+                    <Text style={styles.headerText}>Forgot Password</Text>
                 </View>
                 <View style={styles.WrapperImage}>
                     <SvgXml xml={icons.forgotPasswordImg} width="220" height="220" />
@@ -33,8 +35,7 @@ const ForgotPasswordScreen = (props) => {
                         wrapperStyle={styles.input}
                         placeholder='Email'
                         onChangeText={val => setEmail(val)}
-                        renderIconRight={() => <SvgXml xml={icons.email} />} />
-                    <Text style={styles.orText}>OR</Text>
+                        renderIconLeft={() => <Icon name='mail' size={16} color={'#c6c6c6'} />} />
                     <Button
                         onPress={() => forgotPassword(navigation, email)}
                         title='Reset password'
@@ -49,9 +50,18 @@ const forgotPassword = (navigation, email) => {
     auth()
         .sendPasswordResetEmail(email)
         .then(() => {
-            navigation.navigate('VerificationScreen');
+            alert('A password reset link has been sent to your email')
+            navigation.navigate('LoginScreen');
         })
         .catch(error => {
+            if (error.code === 'auth/email-already-in-use') {
+                alert('That email address is already in use!');
+            }
+
+            if (error.code === 'auth/invalid-email') {
+                alert('That email address is invalid!');
+            }
+
             alert(error);
         });
 };

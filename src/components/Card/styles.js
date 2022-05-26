@@ -20,7 +20,7 @@ const styles = ScaledSheet.create({
     favorite: {
         position: 'absolute',
         top: 12,
-        left: 12,
+        right: 12,
     },
     bottomCard: {
         position: 'absolute',

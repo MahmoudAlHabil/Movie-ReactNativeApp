@@ -17,10 +17,10 @@ const styles = ScaledSheet.create({
         lineHeight: 35,
         flex: 1,
         textAlign: 'center',
-        marginLeft: '11%',
+        marginRight: '11%',
     },
     wrapperBackIcon: {
-        marginRight: '5%',
+        marginLeft: '5%',
         width: 24,
         justifyContent: 'center',
         alignItems: 'center',

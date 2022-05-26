@@ -4,6 +4,7 @@ import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { SvgXml } from 'react-native-svg';
 import { icons } from '../../utils/icons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
 import auth from '@react-native-firebase/auth';
 
@@ -19,20 +20,20 @@ const CreateAccountScreen = (props) => {
         style={styles.visibleIcon}
         onPress={visibleHandler}>
         {isVisible ?
-            <SvgXml xml={icons.visible} /> :
-            <SvgXml xml={icons.invisible} />}
+            <Icon name='ios-eye' size={16} color={'#c6c6c6'} /> :
+            <Icon name='ios-eye-off' size={16} color={'#c6c6c6'} />}
     </TouchableOpacity>)
 
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View style={styles.header}>
-                    <Text style={styles.headerText}>Create Account</Text>
                     <TouchableOpacity
                         onPress={() => navigation.navigate('WelcomeScreen')}
                         style={styles.wrapperBackIcon}>
-                        <SvgXml xml={icons.back} width="17" height="15" />
+                        <Icon name='arrow-back' size={32} color='black' style={{ fontWeight: 'bold' }} />
                     </TouchableOpacity>
+                    <Text style={styles.headerText}>Create Account</Text>
                 </View>
                 <View style={styles.WrapperImage}>
                     <SvgXml xml={icons.createAccountImg} width="220" height="220" />
@@ -40,20 +41,20 @@ const CreateAccountScreen = (props) => {
                 <View style={styles.WrapperForm}>
                     <Input
                         wrapperStyle={styles.input}
-                        placeholder='Username'
-                        renderIconRight={() => <SvgXml xml={icons.user} />} />
+                        placeholder='Your name'
+                        renderIconLeft={() => <Icon name='person-sharp' size={16} color={'#c6c6c6'} />} />
                     <Input
                         wrapperStyle={styles.input}
                         placeholder='Email'
                         onChangeText={val => setEmail(val)}
-                        renderIconRight={() => <SvgXml xml={icons.email} />} />
+                        renderIconLeft={() => <Icon name='mail' size={16} color={'#c6c6c6'} />} />
                     <Input
                         wrapperStyle={styles.input}
                         placeholder='Password'
                         secureTextEntry={!isVisible}
                         onChangeText={val => setPassword(val)}
-                        renderIconRight={() => <SvgXml xml={icons.lock} />}
-                        renderIconLeft={() => visibleIcon} />
+                        renderIconLeft={() => <Icon name='lock-closed' size={16} color={'#c6c6c6'} />}
+                        renderIconRight={() => visibleIcon} />
                     <Button
                         onPress={() => createUser(navigation, email, password)}
                         title='Sing Up'

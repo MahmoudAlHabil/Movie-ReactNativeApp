@@ -2,6 +2,9 @@ import React from 'react';
 import { Button, View } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomeTab from './HomeTab';
+import PrivacyPolicyScreen from '../screens/PrivacyPolicyScreen';
+import ContactUsScreen from '../screens/ContactUsScreen';
+import { primary } from '../utils/colors';
 
 function HomeScreen({ navigation }) {
   return (
@@ -26,10 +29,12 @@ const Drawer = createDrawerNavigator();
 
 const HomeDrawer = () => {
   return (
-      <Drawer.Navigator>
+      <Drawer.Navigator
+      screenOptions={{headerTitleStyle: {color: primary}, 
+      drawerLabelStyle: {}}}>
         <Drawer.Screen name="HomeTab" component={HomeTab} />
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Notifications" component={NotificationsScreen} />
+        <Drawer.Screen name="Privacy Policy" component={PrivacyPolicyScreen} />
+        <Drawer.Screen name="Contact Us" component={ContactUsScreen} />
       </Drawer.Navigator>
   );
 }
