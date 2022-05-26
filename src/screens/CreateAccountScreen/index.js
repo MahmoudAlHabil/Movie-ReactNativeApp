@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, View, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { SvgXml } from 'react-native-svg';
 import { icons } from '../../utils/icons';
 import styles from './styles';
+import auth from '@react-native-firebase/auth';
 
 
 const CreateAccountScreen = (props) => {
 
     const { navigation } = props;
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [isVisible, setIsVisible] = React.useState(false);
     const visibleHandler = () => setIsVisible(prevIsVisible => prevIsVisible ? false : true)
     const visibleIcon = (<TouchableOpacity
@@ -42,19 +45,17 @@ const CreateAccountScreen = (props) => {
                     <Input
                         wrapperStyle={styles.input}
                         placeholder='Email'
+                        onChangeText={val => setEmail(val)}
                         renderIconRight={() => <SvgXml xml={icons.email} />} />
-                    <Input
-                        wrapperStyle={styles.input}
-                        placeholder='Phone number'
-                        renderIconRight={() => <SvgXml xml={icons.phone} />} />
                     <Input
                         wrapperStyle={styles.input}
                         placeholder='Password'
                         secureTextEntry={!isVisible}
+                        onChangeText={val => setPassword(val)}
                         renderIconRight={() => <SvgXml xml={icons.lock} />}
                         renderIconLeft={() => visibleIcon} />
                     <Button
-                        onPress={() => navigation.navigate('HomeDrawer')}
+                        onPress={() => createUser(navigation, email, password)}
                         title='Sing Up'
                         wrapperStyle={styles.SignupButton} />
                     <TouchableOpacity

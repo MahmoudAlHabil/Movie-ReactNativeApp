@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, View, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { SvgXml } from 'react-native-svg';
 import { icons } from '../../utils/icons';
 import styles from './styles';
+import auth from '@react-native-firebase/auth';
 
 
 const ForgotPasswordScreen = (props) => {
 
     const { navigation } = props;
+    const [email, setEmail] = useState('');
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -31,6 +33,7 @@ const ForgotPasswordScreen = (props) => {
                     <Input
                         wrapperStyle={styles.input}
                         placeholder='Email'
+                        onChangeText={val => setEmail(val)}
                         renderIconRight={() => <SvgXml xml={icons.email} />} />
                     <Text style={styles.orText}>OR</Text>
                     <Input
@@ -38,7 +41,7 @@ const ForgotPasswordScreen = (props) => {
                         placeholder='Phone number'
                         renderIconRight={() => <SvgXml xml={icons.phone} />} />
                     <Button
-                        onPress={() => navigation.navigate('VerificationScreen')}
+                        onPress={() => forgotPassword(navigation, email)}
                         title='Reset password'
                         wrapperStyle={styles.resetPasswordButton} />
                 </View>
@@ -46,6 +49,25 @@ const ForgotPasswordScreen = (props) => {
         </SafeAreaView>
     )
 }
+
+const forgotPassword = (navigation, email) => {
+    auth()
+        .sendPasswordResetEmail(email)
+        .then(() => {
+            navigation.navigate('VerificationScreen');
+        })
+        .catch(error => {
+            if (error.code === 'auth/email-already-in-use') {
+                alert('That email address is already in use!');
+            }
+
+            if (error.code === 'auth/invalid-email') {
+                alert('That email address is invalid!');
+            }
+
+            alert(error);
+        });
+};
 
 export default ForgotPasswordScreen;
 
