@@ -36,10 +36,6 @@ const ForgotPasswordScreen = (props) => {
                         onChangeText={val => setEmail(val)}
                         renderIconRight={() => <SvgXml xml={icons.email} />} />
                     <Text style={styles.orText}>OR</Text>
-                    <Input
-                        wrapperStyle={styles.input}
-                        placeholder='Phone number'
-                        renderIconRight={() => <SvgXml xml={icons.phone} />} />
                     <Button
                         onPress={() => forgotPassword(navigation, email)}
                         title='Reset password'
