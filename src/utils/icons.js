@@ -1,9 +1,9 @@
 export const icons = {
-    user: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  user: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
     <path id="Union_1" data-name="Union 1" d="M0,12V10.5c0-1.65,2.7-3,6-3s6,1.35,6,3V12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#c9c9c9"/>
   </svg>`,
-    filter: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 384c0 28.32 12.49 53.52 32 71.09V496C64 504.8 71.16 512 80 512h32C120.8 512 128 504.8 128 496v-15.1h256V496c0 8.836 7.164 16 16 16h32c8.836 0 16-7.164 16-16v-40.9c19.51-17.57 32-42.77 32-71.09V352H32V384zM496 256H96V77.25C95.97 66.45 111 60.23 118.6 67.88L132.4 81.66C123.6 108.6 129.4 134.5 144.2 153.2C137.9 159.5 137.8 169.8 144 176l11.31 11.31c6.248 6.248 16.38 6.248 22.63 0l105.4-105.4c6.248-6.248 6.248-16.38 0-22.63l-11.31-11.31c-6.248-6.248-16.38-6.248-22.63 0C230.7 33.26 204.7 27.55 177.7 36.41L163.9 22.64C149.5 8.25 129.6 0 109.3 0C66.66 0 32 34.66 32 77.25v178.8L16 256C7.164 256 0 263.2 0 272v32C0 312.8 7.164 320 16 320h480c8.836 0 16-7.164 16-16v-32C512 263.2 504.8 256 496 256z"/></svg>`,
-    lock: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 10 12">
+  filter: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 384c0 28.32 12.49 53.52 32 71.09V496C64 504.8 71.16 512 80 512h32C120.8 512 128 504.8 128 496v-15.1h256V496c0 8.836 7.164 16 16 16h32c8.836 0 16-7.164 16-16v-40.9c19.51-17.57 32-42.77 32-71.09V352H32V384zM496 256H96V77.25C95.97 66.45 111 60.23 118.6 67.88L132.4 81.66C123.6 108.6 129.4 134.5 144.2 153.2C137.9 159.5 137.8 169.8 144 176l11.31 11.31c6.248 6.248 16.38 6.248 22.63 0l105.4-105.4c6.248-6.248 6.248-16.38 0-22.63l-11.31-11.31c-6.248-6.248-16.38-6.248-22.63 0C230.7 33.26 204.7 27.55 177.7 36.41L163.9 22.64C149.5 8.25 129.6 0 109.3 0C66.66 0 32 34.66 32 77.25v178.8L16 256C7.164 256 0 263.2 0 272v32C0 312.8 7.164 320 16 320h480c8.836 0 16-7.164 16-16v-32C512 263.2 504.8 256 496 256z"/></svg>`,
+  lock: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 10 12">
     <path id="Path_49" data-name="Path 49" d="M5,6A1.5,1.5,0,0,1,5,9,1.5,1.5,0,0,1,5,6ZM5,1.5A1.47,1.47,0,0,0,3.571,3H6.429A1.47,1.47,0,0,0,5,1.5ZM8.571,12H1.429A1.47,1.47,0,0,1,0,10.5v-6A1.47,1.47,0,0,1,1.429,3h.714A2.94,2.94,0,0,1,5,0,2.94,2.94,0,0,1,7.857,3h.714A1.47,1.47,0,0,1,10,4.5v6A1.47,1.47,0,0,1,8.571,12Z" fill="#c9c9c9" fill-rule="evenodd"/>
   </svg>
   
@@ -54,7 +54,7 @@ export const icons = {
   <path id="Path_27" data-name="Path 27" d="M462.761,292.322l-.248.254s-11.139,4.833-10.644,10.937c0,0-4.456,13.226-3.466,18.821,0,0-.99,9.156.5,12.717s13.862,17.3,13.862,17.3,11.387-9.156,10.892-9.665L458.8,327.421l7.426-10.174Z" transform="translate(-384.515 -233.924)" fill="#e6e6e6"/>
 </svg>
 `,
-facebook: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  facebook: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
 <defs>
   <clipPath id="clip-path">
     <rect width="16" height="16" fill="none"/>
@@ -66,7 +66,7 @@ facebook: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.or
 </g>
 </svg>
 `,
-loginImg: `<svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="150" height="198.528" viewBox="0 0 150 198.528">
+  loginImg: `<svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="150" height="198.528" viewBox="0 0 150 198.528">
 <rect id="Rectangle_11" data-name="Rectangle 11" width="125.965" height="186.394" transform="translate(0 4.841)" fill="#535461"/>
 <path id="Path_28" data-name="Path 28" d="M91.637,196.1,0,191.28V4.886L91.637.063Z" transform="translate(0 -0.045)" fill="#4c46b4"/>
 <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.135" cy="1.135" r="1.135" transform="translate(82.842 105.84)" fill="#535461"/>
@@ -98,7 +98,7 @@ loginImg: `<svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000
 <path id="Path_43" data-name="Path 43" d="M763.09,155.556s-3.279-1.192-7.75,1.341l2.385.6s-3.577.3-4.024,5.067h1.64s-1.043,4.173,0,5.366l.671-1.267,1.938,3.875.447-1.938.894.3.6-3.13s1.49,2.236,2.683,2.385v-1.938s3.279,3.726,4.322,3.577L765.4,167.7l2.087.447-.894-1.49,5.365,1.49-1.192-1.49,3.726,1.192,1.789.745s2.534-5.813-1.043-9.837S766.444,153.842,763.09,155.556Z" transform="translate(-635.095 -139.235)" fill="#2f2e41"/>
 </svg>
 `,
-back: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15" fill='#000000'>
+  back: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15" fill='#000000'>
 <defs>
   <clipPath id="clip-path">
     <path id="Shape" d="M6.44,14.561l-6-6A1.5,1.5,0,0,1,.012,7.31l0-.012,0-.022,0-.024,0-.009.005-.028v0l.007-.032v0q.008-.034.017-.068h0l.009-.033v0l.009-.03,0-.006.009-.027L.085,7l.008-.023L.1,6.962l.007-.017.01-.025,0-.006a1.492,1.492,0,0,1,.256-.406l0,0L.4,6.485.4,6.475l.016-.017.011-.011L.439,6.44l6-6A1.5,1.5,0,0,1,8.561,2.561L5.121,6H15.5a1.5,1.5,0,1,1,0,3H5.122l3.439,3.439A1.5,1.5,0,0,1,6.44,14.561Z" transform="translate(4 5.5)"/>
@@ -113,14 +113,14 @@ back: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/19
 </svg>
 
 `,
-invisible: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+  invisible: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
 <path id="ic_visibility_off_24px" d="M9,5.947a3.663,3.663,0,0,1,3.638,3.684,3.616,3.616,0,0,1-.262,1.348L14.5,13.132a8.7,8.7,0,0,0,2.5-3.5A8.608,8.608,0,0,0,9,4.105a8.378,8.378,0,0,0-2.9.516L7.672,6.213A3.493,3.493,0,0,1,9,5.947ZM1.728,3.936l1.659,1.68.335.339A8.689,8.689,0,0,0,1,9.632a8.608,8.608,0,0,0,8,5.526,8.474,8.474,0,0,0,3.187-.619l.306.309L14.628,17l.924-.936L2.652,3ZM5.751,8.011,6.879,9.153a2.1,2.1,0,0,0-.058.479A2.194,2.194,0,0,0,9,11.842a2.028,2.028,0,0,0,.473-.059L10.6,12.925a3.57,3.57,0,0,1-1.6.391A3.668,3.668,0,0,1,5.751,8.011Zm3.136-.575,2.292,2.321.015-.118A2.194,2.194,0,0,0,9.011,7.428Z" transform="translate(-1 -3)" fill="#c9c9c9"/>
 </svg>
 `,
-visible: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 121.025 121.025" fill="#C9C9C9" xml:space="preserve">
+  visible: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 121.025 121.025" fill="#C9C9C9" xml:space="preserve">
 <path fill="#C9C9C9" d="M1.35 64.212c7.9 9.9 31.4 36.3 59.2 36.3 27.8 0 51.3-26.399 59.2-36.3 1.699-2.2 1.699-5.3 0-7.399-7.9-9.9-31.4-36.3-59.2-36.3-27.8-.1-51.3 26.3-59.2 36.2a5.882 5.882 0 0 0 0 7.499zm59.2-27.799c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24z"/><circle cx="60.55" cy="60.413" r="12"/></svg>`
-,
-createAccountImg: `<svg xmlns="http://www.w3.org/2000/svg" width="209.459" height="187.295" viewBox="0 0 209.459 187.295">
+  ,
+  createAccountImg: `<svg xmlns="http://www.w3.org/2000/svg" width="209.459" height="187.295" viewBox="0 0 209.459 187.295">
 <g id="Group_11" data-name="Group 11" transform="translate(0 0)">
   <path id="Path_44" data-name="Path 44" d="M227.545,602.561l-2.339-9.227a119.831,119.831,0,0,0-12.712-4.561l-.3,4.288-1.2-4.724c-5.357-1.53-9-2.2-9-2.2s4.923,18.719,15.248,33.031l12.031,2.113-9.346,1.348a48.452,48.452,0,0,0,4.181,4.431c15.02,13.942,31.749,20.338,37.366,14.287s-2.006-22.258-17.026-36.2a63.824,63.824,0,0,0-16.361-10.52Z" transform="translate(-202 -456.664)" fill="#e6e6e6"/>
   <path id="Path_45" data-name="Path 45" d="M334.236,534.127,337,525.019a119.824,119.824,0,0,0-8.524-10.475l-2.469,3.518,1.417-4.663c-3.8-4.078-6.566-6.539-6.566-6.539s-5.462,18.569-4.021,36.157l9.207,8.028-8.7-3.677a48.459,48.459,0,0,0,1.289,5.954c5.651,19.7,16.666,33.821,24.6,31.545s9.788-20.091,4.137-39.79a63.82,63.82,0,0,0-8.568-17.463Z" transform="translate(-286.441 -398.251)" fill="#e6e6e6"/>
@@ -154,15 +154,15 @@ createAccountImg: `<svg xmlns="http://www.w3.org/2000/svg" width="209.459" heigh
 </g>
 </svg>
 `,
-email: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+  email: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
 <path id="Path_642" data-name="Path 642" d="M10.5,1.667h-9L6,5.833ZM0,1.667A1.6,1.6,0,0,1,1.5,0h9A1.6,1.6,0,0,1,12,1.667V8.333A1.6,1.6,0,0,1,10.5,10h-9A1.6,1.6,0,0,1,0,8.333Z" fill="#c9c9c9" fill-rule="evenodd"/>
 </svg>
 `,
-phone: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  phone: `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
 <path id="ic_call_24px" d="M5.413,8.193a10.1,10.1,0,0,0,4.393,4.393l1.467-1.467a.663.663,0,0,1,.68-.16,7.6,7.6,0,0,0,2.38.38.669.669,0,0,1,.667.667v2.327a.669.669,0,0,1-.667.667A11.332,11.332,0,0,1,3,3.667.669.669,0,0,1,3.667,3H6a.669.669,0,0,1,.667.667,7.574,7.574,0,0,0,.38,2.38.669.669,0,0,1-.167.68Z" transform="translate(-3 -3)" fill="#c9c9c9"/>
 </svg>
 `,
-forgotPasswordImg: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238.464" height="176.46" viewBox="0 0 238.464 176.46">
+  forgotPasswordImg: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238.464" height="176.46" viewBox="0 0 238.464 176.46">
 <defs>
   <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
     <stop offset="0" stop-color="gray" stop-opacity="0.251"/>
@@ -222,7 +222,7 @@ forgotPasswordImg: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://
 </g>
 </svg>
 `,
-verificationImg: `<svg xmlns="http://www.w3.org/2000/svg" width="201.192" height="166.608" viewBox="0 0 201.192 166.608">
+  verificationImg: `<svg xmlns="http://www.w3.org/2000/svg" width="201.192" height="166.608" viewBox="0 0 201.192 166.608">
 <g id="Group_25" data-name="Group 25" transform="translate(0 0)">
   <path id="Path_198" data-name="Path 198" d="M305.991,147.749c-1.1,9.462-3.4,17.059-6.549,23.118-4.192,8.073-11.361,11.325-17.766,14.729a40.5,40.5,0,0,1-5.755,2.5c-11.654,4.045-24.7,2.972-34.945.836a137.75,137.75,0,0,0-21.815-2.758q-3.137-.141-6.281-.14c-3.232,0-61.42,1.109-75.587-27.574-3.5-7.075-5.9-15.718-6.757-26.253C128.1,102.425,141.5,82.863,158.775,70.077c32.687-24.187,77.492-23.173,109.7,1.651C289.925,88.264,310.011,113.289,305.991,147.749Z" transform="translate(-128.102 -52.509)" fill="#f2f2f2"/>
   <path id="Path_199" data-name="Path 199" d="M182.872,262.921c0,23.675-14.074,31.941-31.436,31.941S120,286.6,120,262.921s31.436-53.794,31.436-53.794S182.872,239.245,182.872,262.921Z" transform="translate(-120 -176.304)" fill="#6c63ff"/>
@@ -268,7 +268,7 @@ verificationImg: `<svg xmlns="http://www.w3.org/2000/svg" width="201.192" height
 </g>
 </svg>
 `,
-changePasswordImg: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259.827" height="179.366" viewBox="0 0 259.827 179.366">
+  changePasswordImg: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259.827" height="179.366" viewBox="0 0 259.827 179.366">
 <defs>
   <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
     <stop offset="0" stop-color="gray" stop-opacity="0.251"/>
@@ -364,15 +364,15 @@ changePasswordImg: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://
 </g>
 </svg>
 `,
-favorite: `<svg xmlns="http://www.w3.org/2000/svg" width="19.91" height="18.179" viewBox="0 0 19.91 18.179">
+  favorite: `<svg xmlns="http://www.w3.org/2000/svg" width="19.91" height="18.179" viewBox="0 0 19.91 18.179">
 <path id="Icon" d="M9.955,18.179c18.772-12.638,6.4-22.869,0-15.939C3.553-4.691-8.817,5.541,9.955,18.179Z" fill="#6c63ff"/>
 </svg>
 `,
-star: `<svg xmlns="http://www.w3.org/2000/svg" width="11.288" height="10.507" viewBox="0 0 11.288 10.507">
+  star: `<svg xmlns="http://www.w3.org/2000/svg" width="11.288" height="10.507" viewBox="0 0 11.288 10.507">
 <path id="Icon" d="M11.266,3.9a.4.4,0,0,0-.39-.276L7.184,3.612,6.02.272A.4.4,0,0,0,5.626,0,.4.4,0,0,0,5.239.28L4.149,3.612.412,3.621a.4.4,0,0,0-.39.276.389.389,0,0,0,.147.448l2.924,2.1L1.945,9.983a.39.39,0,0,0,.151.446.421.421,0,0,0,.242.078.414.414,0,0,0,.238-.076L5.659,8.312,8.712,10.43a.412.412,0,0,0,.482,0,.39.39,0,0,0,.151-.446L8.2,6.448l2.924-2.1a.39.39,0,0,0,.147-.448" fill="#6c63ff"/>
 </svg>
 `,
-starWhite: `<svg xmlns="http://www.w3.org/2000/svg" width="11.288" height="10.507" viewBox="0 0 11.288 10.507">
+  starWhite: `<svg xmlns="http://www.w3.org/2000/svg" width="11.288" height="10.507" viewBox="0 0 11.288 10.507">
 <path id="Icon" d="M11.266,3.9a.4.4,0,0,0-.39-.276L7.184,3.612,6.02.272A.4.4,0,0,0,5.626,0,.4.4,0,0,0,5.239.28L4.149,3.612.412,3.621a.4.4,0,0,0-.39.276.389.389,0,0,0,.147.448l2.924,2.1L1.945,9.983a.39.39,0,0,0,.151.446.421.421,0,0,0,.242.078.414.414,0,0,0,.238-.076L5.659,8.312,8.712,10.43a.412.412,0,0,0,.482,0,.39.39,0,0,0,.151-.446L8.2,6.448l2.924-2.1a.39.39,0,0,0,.147-.448" fill="#fff"/>
 </svg>
 `,

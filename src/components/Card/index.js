@@ -1,27 +1,31 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
-import { SvgXml } from 'react-native-svg';
-import { icons } from '../../utils/icons';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import Rating from '../Rating';
 import styles from './styles';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
 
 const Card = props => {
+    const { dataMovie } = props;
+    const navigation = useNavigation();
     return (
-        <View style={[styles.card, props.style]}>
+        <TouchableOpacity
+            onPress={() => navigation.navigate('MovieScreen', dataMovie)} style={[styles.card, props.style]}>
             <Image
                 style={styles.imageCard}
-                source={{ uri: 'https://miro.medium.com/max/880/0*k9CL2yoHU6ELTkmi.png' }} />
-            
-            <View style={styles.favorite}>
-                <SvgXml xml={icons.favorite} />
-            </View>
+                resizeMode='contain'
+                source={{ uri: dataMovie.poster }} />
+
+            {dataMovie.Favorite && <View style={styles.favorite}>
+                <Icon name='heart' size={30} color={'#ff4500'} />
+            </View>}
             <View style={styles.bottomCard}>
-                <Text style={styles.text}>Name of movies</Text>
+                <Text style={styles.text}>{dataMovie.title}</Text>
                 <View style={styles.rate}>
-                    <Rating setRate={3}/>
+                    <Rating setRate={dataMovie.rated} />
                 </View>
             </View>
-        </View>
+        </TouchableOpacity>
     );
 };
 

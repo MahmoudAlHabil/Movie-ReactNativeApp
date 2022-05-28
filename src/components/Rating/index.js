@@ -7,13 +7,13 @@ const Rating = (props) => {
 
   const [rating, setRating] = React.useState(setRate);
   return (
-      <StarRating
-        rating={rating}
-        onChange={setRating}
-        starSize={14}
-        color={primary}
-        starStyle={{width: 3}}
-      />
+    <StarRating
+      rating={rating}
+      onChange={setRating}
+      starSize={14}
+      color={primary}
+      starStyle={{ width: 3 }}
+    />
   );
 };
 

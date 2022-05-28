@@ -1,4 +1,4 @@
-import {ScaledSheet} from 'react-native-size-matters';
+import { ScaledSheet } from 'react-native-size-matters';
 
 const styles = ScaledSheet.create({
     container: {
@@ -59,5 +59,5 @@ const styles = ScaledSheet.create({
         marginBottom: '2%',
     },
 })
-  
+
 export default styles;

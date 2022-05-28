@@ -1,13 +1,13 @@
-import {ScaledSheet} from 'react-native-size-matters';
+import { ScaledSheet } from 'react-native-size-matters';
 
 const styles = ScaledSheet.create({
     card: {
-        shadowColor: 'black',
+        shadowColor: 'white',
         shadowOffset: { width: 0, height: 2 },
         shadowRadius: 6,
         shadowOpacity: 0.26,
         elevation: 8,
-        borderRadius: 12,
+        borderRadius: 8,
         backgroundColor: 'black',
         margin: 6,
     },
@@ -15,12 +15,12 @@ const styles = ScaledSheet.create({
         width: '100%',
         height: '100%',
         position: 'absolute',
-        borderRadius: 12,
+        borderRadius: 8,
     },
     favorite: {
         position: 'absolute',
-        top: 12,
-        right: 12,
+        top: 6,
+        right: 6,
     },
     bottomCard: {
         position: 'absolute',

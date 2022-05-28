@@ -1,4 +1,4 @@
-import {ScaledSheet} from 'react-native-size-matters';
+import { ScaledSheet } from 'react-native-size-matters';
 
 const styles = ScaledSheet.create({
     container: {
@@ -9,7 +9,7 @@ const styles = ScaledSheet.create({
         width: 130,
         alignItems: 'center',
         justifyContent: 'center',
-        
+
     },
     text: {
         fontSize: 17,
@@ -21,5 +21,5 @@ const styles = ScaledSheet.create({
         height: 16,
     }
 })
-  
+
 export default styles;

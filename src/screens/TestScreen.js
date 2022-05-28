@@ -1,64 +1,74 @@
-import React from "react";
-import { View, Text, Image, Linking, TouchableOpacity } from "react-native";
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { primary } from "../utils/colors";
+import React from 'react';
+import { SafeAreaView, View, FlatList } from 'react-native';
+import Card from '../components/Card';
+import { GetMovies } from '../API/MoviesAPI';
+import { ScaledSheet } from 'react-native-size-matters';
+const Item = ({ title }) => (
+  <View>
+    <Card style={styles.card} dataMovie={{}} />
+  </View>
+);
 
+class HomeScreen extends React.Component {
+  state = {
+    movieList: [],
+    currentMovieItem: null,
+  }
 
-const PrivacyPolicyScreen = (props) => {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <View style={{alignItems: 'center', justifyContent: 'space-around', height: 180, margin: 30}}>
-        <View>
-          <Image style={{ width: 80, height: 80, borderRadius: 80, alignSelf: 'center', marginBottom: 10 }}
-            source={{ uri: 'https://mir-s3-cdn-cf.behance.net/user/115/61934f748437387.622e0b680865f.jpg' }} />
-            <Text style={{color: primary, fontSize: 20, fontWeight: 'bold'}}>Mahmoud AlHabil</Text>
-        </View>
-        <View style={{flexDirection: 'row', width: '50%', justifyContent: 'space-around'}}>
-          <TouchableOpacity
-            onPress={() => Linking.openURL('https://m.facebook.com/people/Mahmoud-AlHabil/100010120299334')}
-            style={{  }}>
-            <Icon name='facebook' size={44} color={primary} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL('https://api.whatsapp.com/send?phone=970592773664')}
-            style={{  }}>
-            <Icon name='whatsapp' size={44} color={primary} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL('https://github.com/MahmoudAlHabil')}
-            style={{  }}>
-            <Icon name='github' size={44} color={primary} />
-          </TouchableOpacity>
-        </View>
-      </View>
+  onMoviesReceived = (movieList) => {
+    this.setState(prevState => ({
+      movieList: prevState.movieList = movieList
+    }));
+  }
 
-      <View style={{alignItems: 'center', justifyContent: 'space-around', height: 180, margin: 30}}>
-        <View>
-          <Image style={{ width: 80, height: 80, borderRadius: 80, alignSelf: 'center', marginBottom: 10 }}
-            source={{ uri: 'https://mir-s3-cdn-cf.behance.net/user/115/cfe42c394600227.623dc988a998e.jpg' }} />
-            <Text style={{color: primary, fontSize: 20, fontWeight: 'bold'}}>Ahmed Alshareif</Text>
-        </View>
-        <View style={{flexDirection: 'row', width: '50%', justifyContent: 'space-around'}}>
-          <TouchableOpacity
-            onPress={() => Linking.openURL('https://www.facebook.com/Ahmed.Mohammed.AlShareif')}
-            style={{  }}>
-            <Icon name='facebook' size={44} color={primary} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL('https://api.whatsapp.com/send?phone=972567222788')}
-            style={{  }}>
-            <Icon name='whatsapp' size={44} color={primary} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL('https://github.com/AhmedAlshareif')}
-            style={{  }}>
-            <Icon name='github' size={44} color={primary} />
-          </TouchableOpacity>
-        </View>
-      </View>
+  componentDidMount() {
+    GetMovies(this.onMoviesReceived)
+  }
 
+  renderItem = ({ item }) => (
+    <View>
+      <Card style={styles.card} dataMovie={item} />
     </View>
   );
+
+  render() {
+    return (
+      <SafeAreaView style={styles.outerContainer}>
+        <FlatList
+          data={this.state.movieList}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={this.renderItem}
+          numColumns={2}
+          style={styles.outerContainer} />
+      </SafeAreaView>
+    );
+  }
 };
 
-export default PrivacyPolicyScreen; 
+
+export default HomeScreen;
+
+const styles = ScaledSheet.create({
+  outerContainer: {
+
+  },
+  container: {
+    flex: 1,
+    paddingTop: 0,
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+    color: 'white',
+  },
+  card: {
+    height: '170@s',
+    width: '155@s',
+    backgroundColor: '#a9a9a9',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+})

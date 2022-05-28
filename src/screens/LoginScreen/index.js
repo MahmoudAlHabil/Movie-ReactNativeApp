@@ -9,12 +9,12 @@ import styles from './styles';
 import auth from '@react-native-firebase/auth';
 
 
-  
+
 const LoginScreen = (props) => {
   const { navigation } = props;
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
+
   const [isVisible, setIsVisible] = useState(false);
   const visibleHandler = () => setIsVisible(prevIsVisible => prevIsVisible ? false : true)
   const visibleIcon = (<TouchableOpacity

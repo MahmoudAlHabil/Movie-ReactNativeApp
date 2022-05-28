@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, useWindowDimensions, SafeAreaView } from "react-native";
+import { ScrollView, useWindowDimensions } from "react-native";
 import RenderHTML from "react-native-render-html";
 import styles from "./styles";
 
@@ -87,7 +87,7 @@ const TestScreen = (props) => {
     const { width } = useWindowDimensions();
     return (
         <ScrollView style={styles.htmlText}>
-            <RenderHTML contentWidth={width} source={{ html }} />
+            <RenderHTML contentWidth={width} source={{ html }} baseStyle={{ color: 'black' }} />
         </ScrollView>
     );
 };

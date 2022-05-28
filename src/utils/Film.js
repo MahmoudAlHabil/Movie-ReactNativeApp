@@ -2,7 +2,7 @@ export const MovieDummy = [
   {
     "Title": "Avatar",
     "Year": "2009",
-    "Rated": "PG-13",
+    "Rated": "4",
     "Released": "18 Dec 2009",
     "Runtime": "162 min",
     "Genre": "Action, Adventure, Fantasy",
@@ -31,7 +31,7 @@ export const MovieDummy = [
   {
     "Title": "I Am Legend",
     "Year": "2007",
-    "Rated": "PG-13",
+    "Rated": "5",
     "Released": "14 Dec 2007",
     "Runtime": "101 min",
     "Genre": "Drama, Horror, Sci-Fi",
@@ -59,7 +59,7 @@ export const MovieDummy = [
   {
     "Title": "300",
     "Year": "2006",
-    "Rated": "R",
+    "Rated": "2",
     "Released": "09 Mar 2007",
     "Runtime": "117 min",
     "Genre": "Action, Drama, Fantasy",
@@ -86,7 +86,7 @@ export const MovieDummy = [
   {
     "Title": "The Avengers",
     "Year": "2012",
-    "Rated": "PG-13",
+    "Rated": "4",
     "Released": "04 May 2012",
     "Runtime": "143 min",
     "Genre": "Action, Sci-Fi, Thriller",
@@ -104,7 +104,7 @@ export const MovieDummy = [
     "imdbID": "tt0848228",
     "Type": "movie",
     "Response": "True",
-     "Images": [
+    "Images": [
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA0NjY0NzE4OTReQTJeQWpwZ15BbWU3MDczODg2Nzc@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1MzEzMjcyM15BMl5BanBnXkFtZTcwNDM4ODY3Nw@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwMzM2MTg1M15BMl5BanBnXkFtZTcwNjM4ODY3Nw@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
@@ -115,7 +115,7 @@ export const MovieDummy = [
   {
     "Title": "The Wolf of Wall Street",
     "Year": "2013",
-    "Rated": "R",
+    "Rated": "3",
     "Released": "25 Dec 2013",
     "Runtime": "180 min",
     "Genre": "Biography, Comedy, Crime",
@@ -144,7 +144,7 @@ export const MovieDummy = [
   {
     "Title": "Interstellar",
     "Year": "2014",
-    "Rated": "PG-13",
+    "Rated": "5",
     "Released": "07 Nov 2014",
     "Runtime": "169 min",
     "Genre": "Adventure, Drama, Sci-Fi",
@@ -173,7 +173,7 @@ export const MovieDummy = [
   {
     "Title": "Game of Thrones",
     "Year": "2011–",
-    "Rated": "TV-MA",
+    "Rated": "4",
     "Released": "17 Apr 2011",
     "Runtime": "56 min",
     "Genre": "Adventure, Drama, Fantasy",
@@ -203,7 +203,7 @@ export const MovieDummy = [
   {
     "Title": "Vikings",
     "Year": "2013–",
-    "Rated": "TV-14",
+    "Rated": "3",
     "Released": "03 Mar 2013",
     "Runtime": "44 min",
     "Genre": "Action, Drama, History",
@@ -233,7 +233,7 @@ export const MovieDummy = [
   {
     "Title": "Gotham",
     "Year": "2014–",
-    "Rated": "TV-14",
+    "Rated": "3",
     "Released": "01 Aug 2014",
     "Runtime": "42 min",
     "Genre": "Action, Crime, Drama",
@@ -263,7 +263,7 @@ export const MovieDummy = [
   {
     "Title": "Power",
     "Year": "2014–",
-    "Rated": "TV-MA",
+    "Rated": "5",
     "Released": "N/A",
     "Runtime": "50 min",
     "Genre": "Crime, Drama",
@@ -282,7 +282,7 @@ export const MovieDummy = [
     "Type": "series",
     "totalSeasons": "3",
     "Response": "True",
-     "Images": [
+    "Images": [
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc2ODg0MzMzM15BMl5BanBnXkFtZTgwODYxODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyMjA0MzczNV5BMl5BanBnXkFtZTgwNTIyODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk0MTI0NzQ2NV5BMl5BanBnXkFtZTgwMDkxODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
@@ -293,7 +293,7 @@ export const MovieDummy = [
   {
     "Title": "Narcos",
     "Year": "2015–",
-    "Rated": "TV-MA",
+    "Rated": "4",
     "Released": "28 Aug 2015",
     "Runtime": "49 min",
     "Genre": "Biography, Crime, Drama",
@@ -312,7 +312,7 @@ export const MovieDummy = [
     "Type": "series",
     "totalSeasons": "2",
     "Response": "True",
-     "Images": [
+    "Images": [
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2MDMzMTc0MF5BMl5BanBnXkFtZTgwMTAyMzA1OTE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMDkyOTEyNV5BMl5BanBnXkFtZTgwNjY3Mjc3OTE@._V1_SY1000_SX1500_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA2NDUwMTU2NV5BMl5BanBnXkFtZTgwNTI1Mzc3OTE@._V1_SY1000_CR0,0,1499,1000_AL_.jpg",
@@ -323,7 +323,7 @@ export const MovieDummy = [
   {
     "Title": "Breaking Bad",
     "Year": "2008–2013",
-    "Rated": "TV-14",
+    "Rated": "4",
     "Released": "20 Jan 2008",
     "Runtime": "49 min",
     "Genre": "Crime, Drama, Thriller",
@@ -354,7 +354,7 @@ export const MovieDummy = [
     "ComingSoon": true,
     "Title": "Doctor Strange",
     "Year": "2016",
-    "Rated": "N/A",
+    "Rated": "4",
     "Released": "04 Nov 2016",
     "Runtime": "N/A",
     "Genre": "Action, Adventure, Fantasy",
@@ -382,7 +382,7 @@ export const MovieDummy = [
     "ComingSoon": true,
     "Title": "Rogue One: A Star Wars Story",
     "Year": "2016",
-    "Rated": "N/A",
+    "Rated": "4",
     "Released": "16 Dec 2016",
     "Runtime": "N/A",
     "Genre": "Action, Adventure, Sci-Fi",
@@ -412,7 +412,7 @@ export const MovieDummy = [
     "ComingSoon": true,
     "Title": "Assassin's Creed",
     "Year": "2016",
-    "Rated": "N/A",
+    "Rated": "3",
     "Released": "21 Dec 2016",
     "Runtime": "N/A",
     "Genre": "Action, Adventure, Fantasy",
@@ -440,8 +440,8 @@ export const MovieDummy = [
   {
     "ComingSoon": true,
     "Title": "Luke Cage",
-    "Year": "2016–",
-    "Rated": "TV-MA",
+    "Year": "2016",
+    "Rated": "5",
     "Released": "30 Sep 2016",
     "Runtime": "55 min",
     "Genre": "Action, Crime, Drama",

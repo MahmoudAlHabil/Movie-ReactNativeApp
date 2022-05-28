@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, View, SafeAreaView } from 'react-native';
 import Button from '../../components/Button';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { SvgXml } from 'react-native-svg';
 import { icons } from '../../utils/icons';
 import styles from './styles';
@@ -26,9 +25,9 @@ const WelcomeScreen = (props) => {
           <Button title='Sign Up'
             wrapperStyle={styles.button}
             onPress={() => navigation.navigate('CreateAccountScreen')} />
-          <Button title='Sign fast'
+          {/* <Button title='Sign fast'
             wrapperStyle={styles.button}
-            onPress={() => navigation.navigate('HomeDrawer')} />
+            onPress={() => navigation.navigate('HomeDrawer')} /> */}
         </View>
       </View>
     </SafeAreaView>
