@@ -3,50 +3,39 @@ import { SafeAreaView, ScrollView, View, Button, FlatList, StyleSheet, Text, Sta
 import Card from '../../components/Card';
 import { GetMovies } from '../../API/MoviesAPI';
 import styles from './styles';
+import { useMoviesDataContext } from '../../contexts/moviesDataContext';
 
-const Item = ({ title }) => (
-  <View>
-    <Card style={styles.card} dataMovie={{}} />
-  </View>
-);
+const HomeScreen = () => {
+  const {moviesData, setMoviesData} = useMoviesDataContext()
 
-export var moviesList = [];
+  // const onMoviesReceived = (moviesData) => {
+  //   setMoviesData(moviesData);
+  // }
 
-class HomeScreen extends React.Component {
-  state = {
-    movieList: [],
-    currentMovieItem: null,
-  }
+  // useEffect(() => {
+  //   GetMovies(onMoviesReceived)
+  // }, []);
 
-  onMoviesReceived = (movieList) => {
-    this.setState(prevState => ({
-      movieList: prevState.movieList = movieList
-    }));
-    moviesList = this.state.movieList;
-  }
+  // useEffect(() => {
+  //   setMoviesData(MovieDummy)
+  // }, []);
 
-  componentDidMount() {
-    GetMovies(this.onMoviesReceived)
-  }
-
-  renderItem = ({ item }) => (
+  const renderItem = ({ item }) => (
     <View>
       <Card style={styles.card} dataMovie={item} />
     </View>
   );
 
-  render() {
-    return (
-      <SafeAreaView>
-        <FlatList
-          data={this.state.movieList}
-          keyExtractor={(item, index) => index.toString()}
-          renderItem={this.renderItem}
-          numColumns={2}
-          columnWrapperStyle={styles.container} />
-      </SafeAreaView>
-    );
-  }
+  return (
+    <SafeAreaView>
+      <FlatList
+        data={moviesData}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={renderItem}
+        numColumns={2}
+        columnWrapperStyle={styles.container} />
+    </SafeAreaView>
+  );
 };
 
 

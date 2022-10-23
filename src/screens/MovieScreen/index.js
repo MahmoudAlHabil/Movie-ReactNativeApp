@@ -10,18 +10,18 @@ const MovieScreen = (props) => {
   return (
     <SafeAreaView style={styles.outerContainer}>
       <ScrollView style={styles.container}>
-        <Text style={styles.title}>{movie.title}</Text>
-        <Image source={{ uri: movie.poster }} style={styles.poster} />
-        <Text style={styles.text}>Description: {movie.plot}</Text>
-        <Text style={styles.text}>Type: {movie.genre}</Text>
-        <Text style={styles.text}>Language: {movie.language}</Text>
-        <Text style={styles.text}>Country: {movie.country}</Text>
-        <Text style={styles.text}>Rating: {<Rating setRate={movie.rated} />}</Text>
-        <Text style={styles.text}>Time: {movie.runtime}</Text>
-        <Text style={styles.text}>Realeased: {movie.released}</Text>
+        <Text style={styles.title}>{movie.Title}</Text>
+        <Image source={{ uri: movie.Poster }} style={styles.poster} />
+        <Text style={styles.text}>Description: {movie.Plot}</Text>
+        <Text style={styles.text}>Type: {movie.Genre}</Text>
+        <Text style={styles.text}>Language: {movie.Language}</Text>
+        <Text style={styles.text}>Country: {movie.Country}</Text>
+        <Text style={styles.text}>Rating: {<Rating setRate={movie.Rated} />}</Text>
+        <Text style={styles.text}>Time: {movie.Runtime}</Text>
+        <Text style={styles.text}>Realeased: {movie.Released}</Text>
         <Text style={styles.textActor}>Actors</Text>
         <ScrollView horizontal={true} style={styles.scrollActor}>
-          {movie.images.map((img, index) => <Image source={{ uri: img }} style={styles.img} key={index} />)}
+          {movie.Images.map((img, index) => <Image source={{ uri: img }} style={styles.img} key={index} />)}
         </ScrollView>
         <Button
           onPress={() => Linking.openURL(movie.watch.toString())}

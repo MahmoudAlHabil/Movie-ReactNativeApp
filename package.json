@@ -28,7 +28,8 @@
     "react-native-splash-screen": "^3.3.0",
     "react-native-star-rating-widget": "^1.2.0",
     "react-native-svg": "^12.3.0",
-    "react-native-vector-icons": "^9.1.0"
+    "react-native-vector-icons": "^9.1.0",
+    "upgrade": "^1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
